@@ -1,0 +1,110 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+      aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+      aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h1 class="display-2">Bem vindo!</h1>
+      <img src="../../assets/img/Checklist-rafiki.png" class="d-block" alt="...">
+      <p>Organize seu dia com o Tudu.</p>
+    </div>
+    <div class="carousel-item">
+      <h1 class="display-2">Bem vindo!</h1>
+      <img src="../../assets/img/Checklist-rafiki.png" class="d-block" alt="...">
+      <p>Organize seu dia com o Tudu.</p>
+    </div>
+    <div class="carousel-item">
+      <h1 class="display-2">Bem vindo!</h1>
+      <img src="../../assets/img/Checklist-rafiki.png" class="d-block" alt="...">
+      <p>Organize seu dia com o Tudu.</p>
+    </div>
+    <div class="carousel-item">
+      <h1 class="display-2">Bem vindo!</h1>
+      <img src="../../assets/img/Checklist-rafiki.png" class="d-block" alt="...">
+      <p>Organize seu dia com o Tudu.</p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="acesso fixed-bottom" id="acesso" [class.mostrando]="clicked_value == 1">
+  <button class="btn btn-clear m-2" (click)="show()" *ngIf="clicked_value == 0"><span><svg xmlns="http://www.w3.org/2000/svg" width="20"
+        height="20" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+      </svg></span></button>
+  <button class="btn btn-clear m-2" (click)="show()" *ngIf="clicked_value == 1"><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-dash-lg"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z" />
+      </svg></span>
+  </button>
+  <div class="entrar ps-5 pe-5" *ngIf="cadastrar == false && clicked_value == 1">
+    <h1 class="display-2 mt-1 mb-5">Entrar</h1>
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">E-mail</label>
+    </div>
+    <div class="form-floating">
+      <span style="position: absolute; bottom: 25%; right: 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16">
+          <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z"/>
+          <path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z"/>
+          <path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z"/>
+        </svg>
+      </span>
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Senha</label>
+    </div>
+    <button class="btn btn-primary mt-5 mb-3" routerLink="principal" (click)="entrar()">Entrar</button>
+    <button class="btn btn-primary mb-5" id="google-button" (click)="entrar()"><img src="../../assets/img/Google__G__Logo.svg.png" alt="google-icon" class="me-2">Entrar com o Google</button>
+    <a (click)="cadastro()"><p class="text-center">Não tenho conta</p></a>
+  </div>
+  <div class="cadastrar ps-5 pe-5" *ngIf="cadastrar == true && clicked_value == 1">
+    <h1 class="display-2 mt-1 mb-5">Cadastrar</h1>
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="nome">
+      <label for="floatingInput">Nome</label>
+    </div>
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">E-mail</label>
+    </div>
+    <div class="form-floating">
+      <span style="position: absolute; bottom: 25%; right: 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16">
+          <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z"/>
+          <path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z"/>
+          <path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z"/>
+        </svg>
+      </span>
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Senha</label>
+    </div>
+    <div class="form-floating">
+      <span style="position: absolute; bottom: 25%; right: 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+        </svg>
+      </span>
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Repetir senha</label>
+    </div>
+    <button class="btn btn-primary mt-5 mb-3" routerLink="principal" (click)="entrar()">Cadastrar</button>
+    <button class="btn btn-primary mb-5" id="google-button" (click)="entrar()"><img src="../../assets/img/Google__G__Logo.svg.png" alt="google-icon" class="me-2">Cadastrar com o Google</button>
+    <a (click)="cadastro()"><p class="text-center">Já tenho conta</p></a>
+  </div>
+</div>
