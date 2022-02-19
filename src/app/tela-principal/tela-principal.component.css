@@ -1,5 +1,5 @@
 /*Font-family import*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 /*Code style*/
 
@@ -36,10 +36,17 @@ div h5 {
 }
 
 .form-check-input {
+  background-color: rgba(255, 255, 255, 0);
   border: 2px solid #ebf4fd;
+  border-radius: 8px;
   width: 25px;
   height: 25px;
   margin-right: 15px;
+}
+
+.check-concluido {
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
 }
 
 .um {
@@ -67,22 +74,35 @@ div h5 {
 }
 
 .um > .descricao {
-  font-size: 13px;
+  font-size: 11px;
   color: #b3514e;
 }
 
 .dois > .descricao {
-  font-size: 13px;
+  font-size: 11px;
   color: #b18c3d;
 }
 
 .tres > .descricao {
-  font-size: 13px;
+  font-size: 11px;
   color: #507fc5;
+}
+
+.slide {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.slide::-webkit-scrollbar {
+  color: white;
 }
 
 .card {
   border: none;
+  min-width: 170px;
+	height: 150px;
+  margin-right: 20px;
 }
 
 .card-body {
@@ -90,10 +110,20 @@ div h5 {
   box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.116);
 }
 
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.verTarefa, .pesquisa {
+  cursor: pointer;
+}
+
 .porcentagem-um {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #b3514e;
+  font-size: 20px;
   margin: -1px;
   margin-bottom: 2px;
 }
@@ -106,6 +136,7 @@ div h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #b18c3d;
+  font-size: 20px;
   margin: -1px;
   margin-bottom: 2px;
 }
@@ -118,6 +149,7 @@ div h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #507fc5;
+  font-size: 20px;
   margin: -1px;
   margin-bottom: 2px;
 }
@@ -140,6 +172,6 @@ div h5 {
 }
 
 .concluido > .descricao {
-  font-size: 13px;
+  font-size: 11px;
   color: #c7cdd3;
 }

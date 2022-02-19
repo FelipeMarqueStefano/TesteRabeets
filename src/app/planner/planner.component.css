@@ -1,0 +1,67 @@
+/*Font-family import*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap');
+
+/*Code style*/
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.calendar {
+  height: 35vh;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.109);
+}
+
+.dia-num {
+  background-color: #6AA5FF;
+  color: white;
+  width: 35px;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: -15px;
+  border-radius: 50%;
+}
+
+.um {
+  background-color: #FE746F;
+  color: white;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.109);
+  cursor: pointer;
+}
+
+.dois {
+  background-color: #FEC857; 
+  color: white;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.109);
+}
+
+.descricao {
+  margin-top: -17px;
+}
+
+.um > .descricao {
+  font-size: 13px;
+  color: #b3514e;
+}
+
+.dois > .descricao {
+  font-size: 13px;
+  color: #b18c3d;
+}
+
+.container {
+  margin-bottom: 80px;
+}

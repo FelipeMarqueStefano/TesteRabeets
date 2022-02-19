@@ -8,6 +8,7 @@ import { TelaPrincipalComponent } from './tela-principal/tela-principal.componen
 import { TabsComponent } from './tabs/tabs.component';
 import { CriarTarefaComponent } from './criar-tarefa/criar-tarefa.component';
 import { PlannerComponent } from './planner/planner.component';
+import { TarefaComponent } from './tarefa/tarefa.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PlannerComponent } from './planner/planner.component';
     TelaPrincipalComponent,
     TabsComponent,
     CriarTarefaComponent,
-    PlannerComponent
+    PlannerComponent,
+    TarefaComponent
   ],
   imports: [
     BrowserModule,
